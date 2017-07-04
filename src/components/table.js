@@ -16,11 +16,11 @@ export default class myTable extends React.Component {
         for (let i = 0; i < 46; i++) {
             data.push({
                 key: i,
-                name: `Mr劳卜${i}`,
+                name: `HPE`,
                 age: 18,
-                address: `西湖区湖底公园${i}号`,
-                remark: 'http://www.cnblogs.com/luozhihao/',
-                operate: '暂无'
+                address: `重庆市沙坪坝区西永镇西园一路108号`,
+                remark: '',
+                operate: 'none'
             })
         }
 
@@ -29,7 +29,7 @@ export default class myTable extends React.Component {
         })
     }
 
-    // checkbox状态
+    // checkbox
     onSelectChange = (selectedRowKeys) => {
         console.log('selectedRowKeys changed: ', selectedRowKeys)
         this.setState({ selectedRowKeys })
@@ -37,26 +37,26 @@ export default class myTable extends React.Component {
 
     render() {
         const columns = [{
-            title: '姓名',
+            title: 'Name',
             width: '20%',
             dataIndex: 'name'
         }, {
-            title: '年龄',
+            title: 'Age',
             width: '20%',
             dataIndex: 'age',
         }, {
-            title: '住址',
+            title: 'Address',
             width: '20%',
             dataIndex: 'address'
         }, {
-            title: '备注',
+            title: 'Remark',
             width: '20%',
             dataIndex: 'remark',
             render(text) {
-                return <a href={text} target="_blank">博客园</a>
+                return <a href={text} target="_blank">Links</a>
             }
         }, {
-            title: '操作',
+            title: 'Operate',
             width: '20%',
             dataIndex: 'operate'
         }]

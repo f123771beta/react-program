@@ -13,27 +13,27 @@ class myForm extends React.Component {
         }
     }
 
-    // 选择select
+    // select
     handleSelectChange = (value) => {
         console.log(`selected ${value}`)
     }
 
-    // 提交表单
+    // submit form
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log('收到表单值：', this.props.form.getFieldsValue())
+        console.log('value get', this.props.form.getFieldsValue())
 
         this.props.form.resetFields()
     }
 
 
-    // 显示弹框
+    // display
     showModal = () => {
         this.setState({ visible: true })
     }
 
 
-    // 隐藏弹框
+    // hide
     hideModal = () => {
         this.setState({ visible: false })
     }
@@ -47,14 +47,14 @@ class myForm extends React.Component {
         }
 
         const success = function () {
-            message.success('操作成功!');
+            message.success('success!');
         }
 
         return (
             <Form horizontal onSubmit={this.handleSubmit}>
                 <FormItem
                     id="control-input"
-                    label="输入框"
+                    label="Enter"
                     {...formItemLayout}
                     required>
                     <Input id="control-input" placeholder="Please enter..."
@@ -62,7 +62,7 @@ class myForm extends React.Component {
                 </FormItem>
 
                 <FormItem
-                    label="日期选择框"
+                    label="Date"
                     labelCol={{ span: 3 }}
                     required>
                     <Col span="2">
@@ -82,7 +82,7 @@ class myForm extends React.Component {
 
                 <FormItem
                     id="control-textarea"
-                    label="文本域"
+                    label="textarea"
                     {...formItemLayout}>
                     <Input type="textarea" id="control-textarea" rows="3" 
                     {...getFieldProps('content')} />
@@ -90,28 +90,28 @@ class myForm extends React.Component {
 
                 <FormItem
                     id="select"
-                    label="Select 选择器"
+                    label="Select"
                     {...formItemLayout}>
-                    <Select id="select" size="large" defaultValue="lucy" style={{ width: 200 }} onChange={this.handleSelectChange}
+                    <Select id="select" size="large" defaultValue="HPE" style={{ width: 200 }} onChange={this.handleSelectChange}
                         {...getFieldProps('people')}>
                         <Option value="jack">jack</Option>
-                        <Option value="lucy">lucy</Option>
+                        <Option value="HPE">HPE</Option>
                         <Option value="disabled" disabled>disabled</Option>
-                        <Option value="yiminghe">yiminghe</Option>
+                        <Option value="HPI">HPI</Option>
                     </Select>
                 </FormItem>
 
                 <FormItem
-                    label="Checkbox 多选框"
+                    label="Checkbox multiple"
                     {...formItemLayout}
                 >
-                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem1')}>选项一</Checkbox>
-                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem2')}>选项二</Checkbox>
-                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem3')}>选项三</Checkbox>
+                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem1')}>Itme1</Checkbox>
+                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem2')}>Itme2</Checkbox>
+                    <Checkbox className="ant-checkbox-inline" {...getFieldProps('checkboxItem3')}>Itme3</Checkbox>
                 </FormItem>
 
                 <FormItem
-                    label="Radio 单选框"
+                    label="Radio single"
                     {...formItemLayout} >
                     <RadioGroup defaultValue="b" {...getFieldProps('radioItem')}>
                         <Radio value="a">A</Radio>
@@ -121,12 +121,12 @@ class myForm extends React.Component {
                     </RadioGroup>
                 </FormItem>
                 <FormItem wrapperCol={{ span: 6, offset: 3 }} style={{ marginTop: 24 }}>
-                    <Button type="primary" htmlType="submit" onClick={success}>确定</Button>
+                    <Button type="primary" htmlType="submit" onClick={success}>OK</Button>
                     &nbsp;&nbsp;&nbsp;
-                    <Button type="ghost" onClick={this.showModal}>点击有惊喜</Button>
+                    <Button type="ghost" onClick={this.showModal}>Popup</Button>
                 </FormItem>
-                <Modal title="登录" visible={this.state.visible} onOk={this.hideModal} onCancel={this.hideModal}>
-                    这是一个modal
+                <Modal title="login" visible={this.state.visible} onOk={this.hideModal} onCancel={this.hideModal}>
+                    modal
                 </Modal>
             </Form>
         )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'antd';
 
-// 引入标准Fetch及IE兼容依赖
+
 import 'whatwg-fetch'
 
 export default class myCard extends React.Component {

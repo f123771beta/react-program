@@ -1,4 +1,4 @@
-/* 左侧导航固定宽度 */
+/*left menu */
 #leftMenu {   
     position: absolute;
     top: 0;
@@ -8,7 +8,7 @@
     border-right: 1px solid #e9e9e9;
 }
 
-/* logo样式 */
+/* logo */
 #logo {
     display: block;
     margin: 20px auto;
@@ -27,7 +27,7 @@
 }
 
 
-/* 右侧宽度自适应 */
+/* right */
 #rightWrap {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -39,6 +39,7 @@
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    background: #333;
 
 }
 
@@ -53,10 +54,16 @@
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    background: #333;
+}
+#rightWrap .ant-menu{
+    background: #333;
+
 }
 
 #rightWrap .ant-menu-submenu {
     float: right;
+
 }
 
 .chart-box {
@@ -66,22 +73,37 @@
 .ege {
     display: inline-block;
     margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .ege a {
-    color: #009688;
+
+    color: #fff;
     font-size: 16px;
 }
 
 .lastPic {
     display: block;
-    margin: 16% auto 0;
+    margin: 5% auto 0;
 }
 
-.ani-box {
+.pro-box {
+    color: #fff;
     text-align: center;
-}
+    font-size: 16px;
 
+}
+.text-box {
+    display: inline;
+    color: #fff;
+    font-size: 15px;
+}
 .doclist {
-    line-height: 40px;
+    line-height: 30px;
+}
+.titlelist {
+    color: #FFB90F;
+    font-size: 20px;
+    line-height: 30px;
 }

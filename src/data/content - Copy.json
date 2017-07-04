@@ -1,0 +1,44 @@
+[
+  {
+    "lang": "en",
+    "summary": {
+        "header": "Team lead BMI of Hewlett-Packard Enterprise, China.",
+        "text": "6 years in website development.
+                 3 years in MySQL database experience.
+                  Familiar with website architected and database improvement.
+                  knowledge on website developing and improving.
+                  Experienced on BMI Production issue trouble shooting and support.
+                  User story design and implement of Big Machines.Inc platform
+                  Strong communication skills in English and presentation skills."
+        ,
+        "typeOfBusiness": "Electronics manufacture",
+        "functionalOrProfessionType": "Team lead",
+        "technicalSkills": "React,Javascript,PHP,Java,Ext JS,MySQL"
+    },
+    "experiences": {
+        "header1": "2014/10 – Present: Hewlett-Packard Enterprise team lead of Website Developer",
+
+        "text1": "Provide skilled technical support for HP enterprise salse production site trobleshooting and issue identification.
+                 Coordinate business,QA and developer resoureces to resolve the complex issue.
+                 Training and guiding junior engineers on identify the production site issue and trobleshoot.
+                 Investigate website and backend systems problem.
+                 Design and implement user stories for each new relese.
+                ",
+        "header2": "2011/12 – 2014/9 : Nokia Solutions and Networks Taiwan CO., LTD  Database administrator",
+
+        "text2": "NSN network planning KPI tool website design and implement.
+                  NSN 3G WCDMA & 4G LTE Database maintain and KPI data modeling.
+                  Design and improve data model and data process efficiency for DB.
+                  Big Data process and query scripts improvement.
+                  Maintain database server and troubleshooting.
+                "
+    },
+    "LanguageSkills": {
+          "header": "Chinese : Native English : Fluent"
+    },
+    "Education": {
+          "header": "2006-2010  Fu Jen Catholic University Bachelor degree of Information Management.",
+           "subheader1st": "English Certification: Upper-intermediate TOEIC:815"
+    }
+  }
+]
